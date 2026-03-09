@@ -1,0 +1,42 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  thead th {
+    position: sticky;
+    top: 0;
+    background-color: #d5d1defe;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #0000000b;
+  }
+  
+  tbody tr:hover {
+    background-color: #fff6 !important;
+  }
+
+  .status {
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+
+    .paid {
+      background-color: rgb(79, 174, 236);
+    }
+  
+     .paid{
+      margin: 20px;
+      height: 10px;
+      padding: 5px;
+    }
+
+  }

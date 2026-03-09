@@ -1,0 +1,68 @@
+<body>
+    
+<!-- sign-up.component.html -->
+<!-- src/app/sign-up/sign-up.component.html -->
+<!-- sign-up.component.html -->
+<div class="container">
+  <div class="heading">Sign Up</div>
+  <form class="form" (ngSubmit)="onSignUp()" #signUpForm="ngForm">
+    <input
+      placeholder="FullName"
+      [(ngModel)]="registerModel.customerName"
+      name="customerName"
+      type="text"
+      class="input"
+      required
+    />
+    <input
+      placeholder="E-mail"
+      [(ngModel)]="registerModel.customerEmail"
+      name="customerEmail"
+      type="email"
+      class="input"
+      required
+    />
+    <input
+      placeholder="Phone"
+      [(ngModel)]="registerModel.customerPhone"
+      name="customerPhone"
+      type="tel"
+      class="input"
+      required
+    />
+    <input
+      placeholder="Nationality"
+      [(ngModel)]="registerModel.customerNationality"
+      name="customerNationality"
+      type="text"
+      class="input"
+      required
+    />
+    <input
+      placeholder="Password"
+      [(ngModel)]="password"
+      name="password"
+      type="password"
+      class="input"
+      required
+    />
+    <input
+      placeholder="Confirm Password"
+      [(ngModel)]="confirmPassword"
+      name="confirmPassword"
+      type="password"
+      class="input"
+      required
+    />
+    <div *ngIf="passwordMismatch" class="error-message">Passwords do not match</div>
+    <input value="Sign Up" type="submit" class="signup-button" />
+    <p class="p">Already have an account?</p>
+    <input value="Back to Sign In" type="button" class="back-button" (click)="navigateToSignIn()" />
+  </form>
+</div>
+
+  
+
+</body>
+
+  

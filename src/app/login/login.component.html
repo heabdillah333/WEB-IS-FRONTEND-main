@@ -1,0 +1,43 @@
+<body>
+    
+
+
+<!-- login.component.html -->
+<div class="container">
+  <div class="heading">Sign In</div>
+  <form class="form" (submit)="onSignIn($event)">
+    <input
+      placeholder="E-mail"
+      id="email"
+      name="username"
+      type="text"
+      class="input"
+      required=""
+      [(ngModel)]="loginModel.username"
+      [(ngModel)]="customerLogInModel.customerEmail"
+
+    />
+    <input
+      placeholder="Password"
+      id="password"
+      name="password"
+      [type]="passwordFieldType"
+      class="input"
+      required=""
+      [(ngModel)]="loginModel.password"
+      [(ngModel)]="customerLogInModel.customerPassword"
+    />
+    <br>
+    <br>
+    <label class="show-password">
+      <input type="checkbox" (click)="togglePasswordVisibility()"> Show Password
+    </label>
+    <input value="Sign In" type="submit" class="login-button" />
+    <p class="p">Don't have an account? 
+    <input value="Sign Up" type="button" class="signup-button" (click)="onSignUp()" />
+  </form>
+</div>
+
+  
+  
+</body>  
